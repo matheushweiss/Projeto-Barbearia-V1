@@ -1,0 +1,257 @@
+body {
+  font-family: 'Comfortaa', cursive;
+}
+header {
+  background-color: #7a7a7a;
+  padding: 20px 0;
+}
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+}
+nav li {
+  display: inline;
+  margin: 0 0 0 10px;
+}
+nav li a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav li a:hover {
+  color: white;
+  font-size: 20px;
+  transition: 400ms;
+}
+
+footer {
+  text-align: center;
+  background: #7a7a7a;
+  padding: 40px 0;
+}
+
+.copy {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+}
+
+form {
+  display: inline-block;
+  text-align: center;
+}
+
+legend {
+  margin-bottom: 0px;
+  padding: 10px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  padding: 2px;
+}
+
+.input-padrao {
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 60%;
+}
+
+.checkbox {
+  margin: 30px 0 30px;
+}
+.enviar {
+  width: 70%;
+  padding: 15px 0;
+  background: #b7b7b7;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s;
+}
+.enviar:hover {
+  transform: scale(1.2);
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 12s ease infinite;
+
+  -z-animation: rainbow 9s ease infinite;
+
+  -o-animation: rainbow 9s ease infinite;
+
+  animation: rainbow 9s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+
+  50% {
+    background-position: 100% 19%;
+  }
+
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+
+  50% {
+    background-position: 100% 19%;
+  }
+
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+
+  50% {
+    background-position: 100% 19%;
+  }
+
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+
+  50% {
+    background-position: 100% 19%;
+  }
+
+  100% {
+    background-position: 0% 82%;
+  }
+}
+
+table {
+  margin: 30px auto;
+  text-align: center;
+}
+thead {
+  background: #7a7a7a;
+  color: #fff;
+  font-weight: bold;
+}
+td,
+th {
+  border: 1px solid rgb(8, 8, 8);
+  padding: 8px 15px;
+}
+
+#mensagem {
+  width: 70%;
+}
+
+.fieldset-horario {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  .enviar {
+    width: auto;
+  }
+  #mensagem {
+    width: 200px;
+  }
+  .caixa {
+    width: auto;
+  }
+  .principal,
+  .footer {
+    width: auto;
+  }
+  h1 {
+    text-align: center;
+  }
+  nav {
+    position: static;
+    text-align: center;
+  }
+  .input-padrao {
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 60%;
+  }
+  #mensagem {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .input-padrao {
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+  }
+  #mensagem {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .input-padrao {
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 70%;
+  }
+  #mensagem {
+    width: 82%;
+  }
+  .enviar {
+    width: 70%;
+    padding: 15px 0;
+    background: #b7b7b7;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+  }
+}
